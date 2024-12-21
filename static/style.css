@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://example.com/heart-disease-medical-image.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure image covers the screen */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+/* Container Styling */
+.container {
+    max-width: 1600px;
+    margin: 20px auto; /* Added some space from top */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #fff; /* Change text color to white for contrast */
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    padding: 20px; /* Add padding to create space around the text */
+    background: linear-gradient(to right, #ff4c4c, #00bcd4); /* Medical-themed gradient (red to blue) */
+    border-radius: 10px; /* Rounded corners for the header background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    margin-bottom: 20px; /* Spacing below the header */
+}
+
+/* Optional: Add a hover effect for the header */
+h1:hover {
+    background: linear-gradient(to right, #ff1a1a, #0097a7); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slight scale increase */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.search-form input {
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow */
+}
+
+.search-form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.5); /* Glow effect */
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    display: flex;
+    align-items: center; /* Align icon with text */
+    gap: 8px; /* Space between icon and text */
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight hover lift */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Add an icon to the button */
+.search-form button::before {
+    content: '\1F50D'; /* Unicode for magnifying glass icon */
+    font-size: 1.2em;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: white; /* Explicit white background for contrast */
+    border-radius: 8px; /* Rounded corners for the table */
+    overflow: hidden; /* For rounded corners to apply properly */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px; /* Increased padding for better spacing */
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase; /* Capitalize headers */
+    letter-spacing: 1px; /* Add spacing to text */
+}
+
+table tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Slight highlight on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .search-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

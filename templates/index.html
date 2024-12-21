@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Search Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Medical Term Search Engine</h1>
+        <p style="text-align: center;">Search for heart disease-related medical terms and view detailed information.</p>
+        <form method="POST" class="search-form">
+            <input type="text" name="search_term" placeholder="Enter a medical term (e.g., Angina)" required>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if originalTerm %}
+            <h2>Search Results for: {{ originalTerm }}</h2>
+            <p><strong>Related Terms:</strong> {{ relatedTerms | join(', ') }}</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Term</th>
+                        <th>Definition</th>
+                        <th>Symptoms</th>
+                        <th>Diagnosis</th>
+                        <th>Treatment</th>
+                        <th>Risk Factors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in df.iterrows() %}
+                        <tr>
+                            <td>{{ row[1]['rank'] }}</td>
+                            <td>{{ row[1]['term'] }}</td>
+                            <td>{{ row[1]['definition'] }}</td>
+                            <td>{{ row[1]['symptoms'] }}</td>
+                            <td>{{ row[1]['diagnosis'] }}</td>
+                            <td>{{ row[1]['treatment'] }}</td>
+                            <td>{{ row[1]['risk_factors'] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+    </div>
+</body>
+</html>
