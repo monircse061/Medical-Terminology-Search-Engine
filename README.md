@@ -1,4 +1,5 @@
-Heart Diseases Medical Terminology Search Engine
+**Heart Diseases Medical Terminology Search Engine**
+
 This project is a web application that uses Apache Nutch as a web crawler, Flask as the framework, and NLP techniques for data preprocessing and extraction. It integrates the SNOMED API for retrieving related medical terminologies.
 
 Why users need Medical Terminology Search Engine?
