@@ -2,7 +2,7 @@
 
 This project is a web application that uses Apache Nutch as a web crawler, Flask as the framework, and NLP techniques for data preprocessing and extraction. It integrates the SNOMED API for retrieving related medical terminologies.
 
-**Why users need Medical Terminology Search Engine?******
+**Why users need Medical Terminology Search Engine?**
 
 • Detailing medical term with related terms and description all
 together.
@@ -13,28 +13,41 @@ together.
 
 Features
 Web Crawling: Powered by Apache Nutch for data collection from web sources.
+
 Natural Language Processing: Uses scikit-learn for text preprocessing and similarity analysis.
+
 API Integration: Retrieves SNOMED CT descriptions via the SNOMED API.
+
 Flask Framework: Handles the back-end application and API routes.
 
 Setup and Installation
+
 Step 1: Clone or Download the Repository
+
 Clone the repository or download it as a ZIP file:
 
 Step 2: Install Necessary Libraries
+
 Ensure you have Python installed. Then, navigate to the project folder and install the required libraries:
 
 pip install -r requirements.txt  
+
 Libraries Used:
 
 Flask
+
 Pandas
+
 scikit-learn
+
 urllib
+
 You can refer to the app.py file for any additional dependencies.
 
 Step 3: Run the Project
+
 Start the application by running the following command in your terminal:
+
 python app.py  
 
 The application will start running on http://localhost:5000.
