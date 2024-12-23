@@ -11,7 +11,8 @@ together.
 
 • Connecting related information for better understanding
 
-Features
+**Features:**
+
 Web Crawling: Powered by Apache Nutch for data collection from web sources.
 
 Natural Language Processing: Uses scikit-learn for text preprocessing and similarity analysis.
