@@ -82,6 +82,8 @@ API: SNOMED
 
 [MD MONIR AHAMMOD]: Project Lead
 
+[VO NGOC HUY THONG]: Team Member
+
 **License**
 
 This project is licensed under the MIT License.
