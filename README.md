@@ -13,25 +13,27 @@ together.
 
 **Features:**
 
-Web Crawling: Powered by Apache Nutch for data collection from web sources.
+• Web Crawling: Powered by Apache Nutch for data collection from web sources.
 
-Natural Language Processing: Uses scikit-learn for text preprocessing and similarity analysis.
+• Natural Language Processing: Uses scikit-learn for text preprocessing and similarity analysis.
 
-API Integration: Retrieves SNOMED CT descriptions via the SNOMED API.
+• API Integration: Retrieves SNOMED CT descriptions via the SNOMED API.
 
-Flask Framework: Handles the back-end application and API routes.
+• Flask Framework: Handles the back-end application and API routes.
 
-Setup and Installation
+**Setup and Installation**
 
-Step 1: Clone or Download the Repository
+**Step 1: Clone or Download the Repository**
 
 Clone the repository or download it as a ZIP file:
 
-Step 2: Install Necessary Libraries
+**Step 2: Install Necessary Libraries**
 
 Ensure you have Python installed. Then, navigate to the project folder and install the required libraries:
 
 pip install -r requirements.txt  
+
+
 
 Libraries Used:
 
@@ -45,7 +47,7 @@ urllib
 
 You can refer to the app.py file for any additional dependencies.
 
-Step 3: Run the Project
+**Step 3: Run the Project**
 
 Start the application by running the following command in your terminal:
 
@@ -53,7 +55,7 @@ python app.py
 
 The application will start running on http://localhost:5000.
 
-Project Structure
+**Project Structure**
 ├── app.py                   # Main application file  
 ├── images/                  # Images used in the project  
 ├── static/                  # Static assets like CSS and JavaScript  
@@ -64,17 +66,23 @@ Project Structure
 ├── main_process.ipynb       # Main data processing notebook  
 └── requirements.txt         # List of required Python libraries  
 
-Technology Stack
+**Technology Stack**
+
 Framework: Flask
+
 Back End: Python
+
 Web Crawler: Apache Nutch
+
 NLP: scikit-learn
+
 API: SNOMED
 
-Contributors
+**Contributors**
 [MD MONIR AHAMMOD]: Project Lead
 
-License
+**License**
+
 This project is licensed under the MIT License.
 
 Feel free to reach out for any questions or contributions! 😊
